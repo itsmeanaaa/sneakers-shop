@@ -1,0 +1,69 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Roboto', sans-serif;
+  
+}
+.fjalla-one-regular {
+  font-family: "Fjalla One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar .nav-link {
+  color: #6c757d;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 30px;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ff7d1a;
+  transition: width 0.3s;
+  bottom: -3px;
+  left: 0;
+}
+
+.navbar .nav-link:hover {
+  color: #000;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.main-image {
+  border-radius: 10px;
+}
+
+.img-thumbnail {
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  width: 22%;
+}
+
+.img-thumbnail:hover {
+  border-color: #ff7d1a;
+}
+
+.cart-icon img {
+  cursor: pointer;
+}
+
+.cart-modal {
+  position: fixed;
+  right: 20px;
+  top: 80px;
+  width: 300px;
+  display: none;
+}
+
+.cart-modal.active {
+  display: block;
+}
